@@ -113,6 +113,15 @@ body {
   color: #ff5a60;
 }
 
+.button-proxy {
+  background: #6782ff;
+  background-image: linear-gradient(to bottom right, #6782ff, #253eb2);
+}
+
+.button-proxy .block-list-item-title {
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 450px) {
   .button-concentration .block-list-item-title,
   .button-calculator .block-list-item-title,
