@@ -144,6 +144,17 @@ module.exports = "<div class=\"home-page\">\n  <intro></intro>\n  <div class=\"f
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/pages/not-found-page/not-found-page.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/pages/not-found-page/not-found-page.component.html ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"page padding\">\n    <span class=\"digits-404\">404</span>\n    <h1>De gevraagde pagina kan niet worden gevonden.</h1>\n</div>"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/pages/school-page/school-page.component.html":
 /*!****************************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/pages/school-page/school-page.component.html ***!
@@ -323,6 +334,12 @@ var routes = [
         path: "",
         component: _pages__WEBPACK_IMPORTED_MODULE_0__["HomePageComponent"],
         pathMatch: "full"
+    }, {
+        path: '404',
+        component: _pages__WEBPACK_IMPORTED_MODULE_0__["NotFoundPageComponent"]
+    }, {
+        path: '**',
+        redirectTo: '/404'
     }
 ];
 
@@ -947,7 +964,7 @@ var HomePageComponent = /** @class */ (function () {
 /*!********************************!*\
   !*** ./src/app/pages/index.ts ***!
   \********************************/
-/*! exports provided: HomePageComponent, SchoolPageComponent, WorkPageComponent, TechPageComponent */
+/*! exports provided: HomePageComponent, NotFoundPageComponent, SchoolPageComponent, WorkPageComponent, TechPageComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -955,18 +972,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/pages/home-page/home-page.component.ts");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HomePageComponent", function() { return _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_0__["HomePageComponent"]; });
 
-/* harmony import */ var _school_page_school_page_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./school-page/school-page.component */ "./src/app/pages/school-page/school-page.component.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SchoolPageComponent", function() { return _school_page_school_page_component__WEBPACK_IMPORTED_MODULE_1__["SchoolPageComponent"]; });
+/* harmony import */ var _not_found_page_not_found_page_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./not-found-page/not-found-page.component */ "./src/app/pages/not-found-page/not-found-page.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NotFoundPageComponent", function() { return _not_found_page_not_found_page_component__WEBPACK_IMPORTED_MODULE_1__["NotFoundPageComponent"]; });
 
-/* harmony import */ var _work_page_work_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./work-page/work-page.component */ "./src/app/pages/work-page/work-page.component.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "WorkPageComponent", function() { return _work_page_work_page_component__WEBPACK_IMPORTED_MODULE_2__["WorkPageComponent"]; });
+/* harmony import */ var _school_page_school_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./school-page/school-page.component */ "./src/app/pages/school-page/school-page.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SchoolPageComponent", function() { return _school_page_school_page_component__WEBPACK_IMPORTED_MODULE_2__["SchoolPageComponent"]; });
 
-/* harmony import */ var _tech_page_tech_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tech-page/tech-page.component */ "./src/app/pages/tech-page/tech-page.component.ts");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TechPageComponent", function() { return _tech_page_tech_page_component__WEBPACK_IMPORTED_MODULE_3__["TechPageComponent"]; });
+/* harmony import */ var _work_page_work_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./work-page/work-page.component */ "./src/app/pages/work-page/work-page.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "WorkPageComponent", function() { return _work_page_work_page_component__WEBPACK_IMPORTED_MODULE_3__["WorkPageComponent"]; });
+
+/* harmony import */ var _tech_page_tech_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tech-page/tech-page.component */ "./src/app/pages/tech-page/tech-page.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TechPageComponent", function() { return _tech_page_tech_page_component__WEBPACK_IMPORTED_MODULE_4__["TechPageComponent"]; });
 
 
 
 
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/not-found-page/not-found-page.component.scss":
+/*!********************************************************************!*\
+  !*** ./src/app/pages/not-found-page/not-found-page.component.scss ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".digits-404 {\n  display: block;\n  font-size: 140px;\n  color: var(--primary-color);\n  margin-top: 70px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zYW5kZXIvUHJvamVjdHMvUG9ydGZvbGlvL0FuZ3VsYXIvUG9ydGZvbGlvL3NyYy9hcHAvcGFnZXMvbm90LWZvdW5kLXBhZ2Uvbm90LWZvdW5kLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3BhZ2VzL25vdC1mb3VuZC1wYWdlL25vdC1mb3VuZC1wYWdlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksY0FBQTtFQUNBLGdCQUFBO0VBQ0EsMkJBQUE7RUFDQSxnQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbm90LWZvdW5kLXBhZ2Uvbm90LWZvdW5kLXBhZ2UuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZGlnaXRzLTQwNCB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgZm9udC1zaXplOiAxNDBweDtcbiAgICBjb2xvcjogdmFyKC0tcHJpbWFyeS1jb2xvcik7XG4gICAgbWFyZ2luLXRvcDogNzBweFxufSIsIi5kaWdpdHMtNDA0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGZvbnQtc2l6ZTogMTQwcHg7XG4gIGNvbG9yOiB2YXIoLS1wcmltYXJ5LWNvbG9yKTtcbiAgbWFyZ2luLXRvcDogNzBweDtcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/pages/not-found-page/not-found-page.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/pages/not-found-page/not-found-page.component.ts ***!
+  \******************************************************************/
+/*! exports provided: NotFoundPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotFoundPageComponent", function() { return NotFoundPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var NotFoundPageComponent = /** @class */ (function () {
+    function NotFoundPageComponent() {
+    }
+    NotFoundPageComponent.prototype.ngOnInit = function () {
+    };
+    NotFoundPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-not-found-page',
+            template: __webpack_require__(/*! raw-loader!./not-found-page.component.html */ "./node_modules/raw-loader/index.js!./src/app/pages/not-found-page/not-found-page.component.html"),
+            styles: [__webpack_require__(/*! ./not-found-page.component.scss */ "./src/app/pages/not-found-page/not-found-page.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], NotFoundPageComponent);
+    return NotFoundPageComponent;
+}());
 
 
 
@@ -1003,7 +1069,8 @@ var PagesModule = /** @class */ (function () {
                 ___WEBPACK_IMPORTED_MODULE_4__["HomePageComponent"],
                 ___WEBPACK_IMPORTED_MODULE_4__["SchoolPageComponent"],
                 ___WEBPACK_IMPORTED_MODULE_4__["WorkPageComponent"],
-                ___WEBPACK_IMPORTED_MODULE_4__["TechPageComponent"]
+                ___WEBPACK_IMPORTED_MODULE_4__["TechPageComponent"],
+                ___WEBPACK_IMPORTED_MODULE_4__["NotFoundPageComponent"]
             ],
             imports: [
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
